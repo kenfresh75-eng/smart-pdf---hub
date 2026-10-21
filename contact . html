@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Smart PDF Hub</title>
+  <meta name="description" content="Contact Smart PDF Hub with questions, feedback or suggestions.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+    a { color: #0759c7; }
+  </style>
+</head>
+<body>
+  <h1>Contact Smart PDF Hub</h1>
+
+  <p>Thank you for visiting Smart PDF Hub.</p>
+
+  <p>If you have questions, feedback, or suggestions about our PDF tools, we would love to hear from you.</p>
+
+  <p>Please contact us by email:</p>
+
+  <p><strong>Email:</strong> YOUR_EMAIL_ADDRESS</p>
+
+  <p>We will do our best to respond to your enquiry.</p>
+
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
