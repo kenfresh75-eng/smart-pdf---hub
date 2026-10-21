@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Smart PDF Hub</title>
+  <meta name="description" content="Read the terms for using Smart PDF Hub.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+    a { color: #0759c7; }
+  </style>
+</head>
+<body>
+  <h1>Terms of Service</h1>
+
+  <p><strong>Last updated:</strong> 21 October 2026</p>
+
+  <h2>Using Our Website</h2>
+  <p>Smart PDF Hub provides tools intended to make working with PDF documents easier. You agree to use the website lawfully and responsibly.</p>
+
+  <h2>Your Documents</h2>
+  <p>You are responsible for ensuring that you have the right to use any documents you process through our tools.</p>
+
+  <h2>Accuracy and Availability</h2>
+  <p>We aim to keep our tools available and working correctly, but we cannot guarantee uninterrupted service or that every feature will work perfectly on every device.</p>
+
+  <h2>Prohibited Use</h2>
+  <p>You must not use our website to violate the law, infringe another person's rights, or interfere with the security of the website.</p>
+
+  <h2>Changes to These Terms</h2>
+  <p>We may update these terms as the website develops. The latest version will be published on this page.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about these terms, please visit our <a href="contact.html">Contact Us</a> page.</p>
+
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
