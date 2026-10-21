@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Smart PDF Hub</title>
+  <meta name="description" content="Learn about Smart PDF Hub and our goal of making PDF tools simple and accessible.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+    a { color: #0759c7; }
+  </style>
+</head>
+<body>
+  <h1>About Smart PDF Hub</h1>
+
+  <p>Welcome to Smart PDF Hub!</p>
+
+  <p>Our goal is to make working with PDF documents simpler and more convenient. We aim to provide easy-to-use tools that help visitors create and manage PDF documents.</p>
+
+  <p>We are continually working to improve our tools and provide useful information about working with PDF files.</p>
+
+  <p>Thank you for visiting Smart PDF Hub.</p>
+
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
