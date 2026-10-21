@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Smart PDF Hub</title>
+  <meta name="description" content="Read the Smart PDF Hub privacy policy.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+    a { color: #0759c7; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+
+  <p><strong>Last updated:</strong> 21 October 2026</p>
+
+  <p>At Smart PDF Hub, we respect your privacy and aim to handle personal information responsibly.</p>
+
+  <h2>Information We Collect</h2>
+  <p>We may receive information you choose to provide when contacting us. Our website hosting provider may also process technical information needed to deliver and secure the website.</p>
+
+  <h2>PDF Files</h2>
+  <p>How PDF files are processed depends on the tools used on this website. Please avoid uploading documents containing sensitive information unless you understand how the tool processes them.</p>
+
+  <h2>Cookies and Advertising</h2>
+  <p>Third-party services, including advertising providers if enabled, may use cookies or similar technologies to provide, measure, and personalise advertisements, subject to applicable settings and requirements.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Our website is hosted using GitHub Pages. If advertising or analytics services are added, those services may process information according to their own privacy policies.</p>
+
+  <h2>Your Choices</h2>
+  <p>You can contact us with questions about privacy or information you have provided directly to us.</p>
+
+  <h2>Contact Us</h2>
+  <p>For privacy questions, please use the contact details on our <a href="contact.html">Contact Us</a> page.</p>
+
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
