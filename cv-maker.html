@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Professional CV Maker | SmartPDF Hub</title>
+
+<meta name="description" content="Create a professional CV online for free with SmartPDF Hub. Build, preview and download a job-ready CV in PDF format.">
+
+<meta name="robots" content="index, follow">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: #12345a;
+    color: white;
+    padding: 24px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 27px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #dbeafe;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 25px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.panel {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+h2 {
+    color: #12345a;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #12345a;
+    font-size: 16px;
+    margin-top: 24px;
+    border-bottom: 1px solid #dbe2ea;
+    padding-bottom: 7px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 13px 0 5px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    padding: 12px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.primary-btn {
+    background: #12345a;
+    color: white;
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background: #1e40af;
+}
+
+.add-btn {
+    background: #e0edff;
+    color: #12345a;
+}
+
+.remove-btn {
+    background: #fee2e2;
+    color: #991b1b;
+    margin-bottom: 12px;
+}
+
+.download-btn {
+    background: #15803d;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.entry {
+    border: 1px solid #dbe2ea;
+    border-radius: 7px;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.preview {
+    background: white;
+    padding: 35px;
+    min-height: 850px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.cv-header {
+    border-bottom: 3px solid #12345a;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+}
+
+.cv-header h1 {
+    color: #12345a;
+    font-size: 29px;
+    margin: 0 0 5px;
+    overflow-wrap: anywhere;
+}
+
+.cv-header p {
+    margin: 3px 0;
+    font-size: 12px;
+    color: #475569;
+    overflow-wrap: anywhere;
+}
+
+.cv-section {
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+.cv-section h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 5px;
+    margin-bottom: 9px;
+}
+
+.cv-section p {
+    font-size: 13px;
+    margin: 5px 0;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.cv-entry {
+    margin-bottom: 13px;
+}
+
+.cv-entry strong {
+    color: #12345a;
+    font-size: 14px;
+}
+
+.cv-entry small {
+    color: #64748b;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media(max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .preview {
+        padding: 22px;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
+@media print {
+    body {
+        background: white;
+        margin: 0;
+    }
+
+    header,
+    .form-panel,
+    footer,
+    .download-btn {
+        display: none !important;
+    }
+
+    .container {
+        display: block;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .preview {
+        display: block;
+        padding: 0;
+        box-shadow: none;
+        min-height: 0;
+    }
+
+    .cv-section {
+        break-inside: avoid;
+    }
+
+    .cv-header {
+        break-after: avoid;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SmartPDF Hub</h1>
+    <p>Professional CV Maker</p>
+</header>
+
+<main class="container">
+
+<section class="panel form-panel">
+
+<h2>Create Your Professional CV</h2>
+
+<p>Complete the form below. Your CV preview will update automatically.</p>
+
+<h3>Personal Information</h3>
+
+<label for="name">Full Name *</label>
+<input id="name" placeholder="Enter your full name" required>
+
+<label for="email">Email Address *</label>
+<input id="email" type="email" placeholder="example@email.com" required>
+
+<label for="phone">Phone Number *</label>
+<input id="phone" type="tel" placeholder="Enter your phone number" required>
+
+<label for="address">Address</label>
+<input id="address" placeholder="City, State, Country">
+
+<label for="linkedin">LinkedIn Profile</label>
+<input id="linkedin" placeholder="LinkedIn profile URL">
+
+<h3>Professional Profile</h3>
+
+<label for="summary">Professional Summary</label>
+<textarea id="summary" placeholder="Write a short professional summary about yourself..."></textarea>
+
+<label for="objective">Career Objective</label>
+<textarea id="objective" placeholder="Describe your career goals..."></textarea>
+
+<h3>Education</h3>
+
+<div id="education-list"></div>
+
+<button type="button" class="add-btn" onclick="addEducation()">
++ Add Education
+</button>
+
+<h3>Work Experience</h3>
+
+<div id="experience-list"></div>
+
+<button type="button" class="add-btn" onclick="addExperience()">
++ Add Work Experience
+</button>
+
+<h3>Skills</h3>
+
+<label for="skills">Professional Skills</label>
+<textarea id="skills" placeholder="Communication, Leadership, Microsoft Office, Programming..."></textarea>
+
+<h3>Certifications and Training</h3>
+
+<label for="certifications">Certifications</label>
+<textarea id="certifications" placeholder="List your professional certifications and training..."></textarea>
+
+<h3>Languages</h3>
+
+<label for="languages">Languages Spoken</label>
+<textarea id="languages" placeholder="English, Igbo, Yoruba..."></textarea>
+
+<h3>References</h3>
+
+<label for="references">Professional References</label>
+<textarea id="references" placeholder="References available upon request, or enter referee details."></textarea>
+
+<button type="button" class="primary-btn" onclick="updateCV()">
+Update CV Preview
+</button>
+
+</section>
+
+<section>
+
+<button class="download-btn" onclick="downloadCV()">
+Download / Print CV as PDF
+</button>
+
+<div class="preview" id="cv-preview">
+
+<div class="cv-header">
+<h1 id="p-name">YOUR FULL NAME</h1>
+<p id="p-contact">Email | Phone | Address</p>
+<p id="p-linkedin"></p>
+</div>
+
+<div class="cv-section">
+<h2>Professional Summary</h2>
+<p id="p-summary">Your professional summary will appear here.</p>
+</div>
+
+<div class="cv-section">
+<h2>Career Objective</h2>
+<p id="p-objective"></p>
+</div>
+
+<div class="cv-section">
+<h2>Education</h2>
+<div id="p-education"></div>
+</div>
+
+<div class="cv-section">
+<h2>Work Experience</h2>
+<div id="p-experience"></div>
+</div>
+
+<div class="cv-section">
+<h2>Professional Skills</h2>
+<p id="p-skills"></p>
+</div>
+
+<div class="cv-section">
+<h2>Certifications and Training</h2>
+<p id="p-certifications"></p>
+</div>
+
+<div class="cv-section">
+<h2>Languages</h2>
+<p id="p-languages"></p>
+</div>
+
+<div class="cv-section">
+<h2>References</h2>
+<p id="p-references"></p>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+    © 2026 SmartPDF Hub. All Rights Reserved.
+</footer>
+
+<script>
+
+function getValue(id) {
+    return document.getElementById(id).value.trim();
+}
+
+function setText(id, value, fallback = "") {
+    document.getElementById(id).textContent = value || fallback;
+}
+
+function createInput(placeholder) {
+    const input = document.createElement("input");
+    input.placeholder = placeholder;
+    input.addEventListener("input", updateCV);
+    return input;
+}
+
+function createEntry(fields, containerId) {
+
+    const entry = document.createElement("div");
+    entry.className = "entry";
+
+    fields.forEach(field => {
+        const label = document.createElement("label");
+        label.textContent = field.label;
+
+        const input = createInput(field.placeholder);
+
+        entry.appendChild(label);
+        entry.appendChild(input);
+    });
+
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "remove-btn";
+    remove.textContent = "Remove";
+
+    remove.addEventListener("click", () => {
+        entry.remove();
+        updateCV();
+    });
+
+    entry.appendChild(remove);
+
+    document.getElementById(containerId).appendChild(entry);
+
+    updateCV();
+}
+
+function addEducation() {
+    createEntry([
+        {label:"Institution",placeholder:"School or University"},
+        {label:"Qualification",placeholder:"Degree or Certificate"},
+        {label:"Course of Study",placeholder:"Course or Department"},
+        {label:"Graduation Year",placeholder:"2025"}
+    ], "education-list");
+}
+
+function addExperience() {
+    createEntry([
+        {label:"Company",placeholder:"Company Name"},
+        {label:"Job Position",placeholder:"Your Job Title"},
+        {label:"Employment Period",placeholder:"2022 - 2025"},
+        {label:"Responsibilities and Achievements",placeholder:"Describe your responsibilities and achievements"}
+    ], "experience-list");
+}
+
+function createPreviewEntry(container, values, education) {
+
+    if (!values.some(value => value.trim())) return;
+
+    const entry = document.createElement("div");
+    entry.className = "cv-entry";
+
+    const title = document.createElement("strong");
+
+    title.textContent = education
+        ? values[1] || values[0]
+        : values[1] || values[0];
+
+    entry.appendChild(title);
+
+    values.forEach((value, index) => {
+
+        if (!value.trim()) return;
+
+        if (index === (education ? 1 : 1)) return;
+
+        const line = document.createElement("p");
+        line.textContent = value;
+        entry.appendChild(line);
+
+    });
+
+    container.appendChild(entry);
+}
+
+function updateCV() {
+
+    const name = getValue("name");
+
+    setText("p-name", name.toUpperCase(), "YOUR FULL NAME");
+
+    const contact = [
+        getValue("email"),
+        getValue("phone"),
+        getValue("address")
+    ].filter(Boolean);
+
+    setText("p-contact", contact.join(" | "), "Email | Phone | Address");
+
+    setText("p-linkedin", getValue("linkedin"));
+
+    setText("p-summary", getValue("summary"), "Your professional summary will appear here.");
+
+    setText("p-objective", getValue("objective"));
+
+    setText("p-skills", getValue("skills"));
+    setText("p-certifications", getValue("certifications"));
+    setText("p-languages", getValue("languages"));
+    setText("p-references", getValue("references"));
+
+    const education = document.getElementById("p-education");
+    education.replaceChildren();
+
+    document.querySelectorAll("#education-list .entry").forEach(entry => {
+
+        const values = [...entry.querySelectorAll("input")].map(input => input.value.trim());
+
+        createPreviewEntry(education, values, true);
+
+    });
+
+    const experience = document.getElementById("p-experience");
+    experience.replaceChildren();
+
+    document.querySelectorAll("#experience-list .entry").forEach(entry => {
+
+        const values = [...entry.querySelectorAll("input")].map(input => input.value.trim());
+
+        createPreviewEntry(experience, values, false);
+
+    });
+
+}
+
+function downloadCV() {
+
+    updateCV();
+
+    if (!getValue("name") || !getValue("email") || !getValue("phone")) {
+        alert("Please enter your full name, email address and phone number before downloading your CV.");
+        return;
+    }
+
+    window.print();
+}
+
+document.querySelectorAll("input, textarea").forEach(element => {
+    element.addEventListener("input", updateCV);
+});
+
+addEducation();
+addExperience();
+
+</script>
+
+</body>
+</html>
