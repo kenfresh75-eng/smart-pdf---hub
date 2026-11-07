@@ -529,14 +529,23 @@
       <h2>Additional Charges</h2>
 
       <div class="form-grid">
-        <label>Tax / VAT (%)
-          <input id="taxRate" type="number" min="0" step="0.01" value="0">
-        </label>
+  <label>VAT Type
+    <select id="taxMode">
+      <option value="percentage">Percentage (%)</option>
+      <option value="fixed">Fixed Amount</option>
+    </select>
+  </label>
 
-        <label>Discount
-          <input id="discount" type="number" min="0" step="0.01" value="0">
-        </label>
-      </div>
+  <label>VAT Value
+    <input id="taxRate" type="number" min="0"
+      step="0.01" value="0">
+  </label>
+
+  <label>Discount
+    <input id="discount" type="number" min="0"
+      step="0.01" value="0">
+  </label>
+</div>
 
       <label>Notes / Payment Instructions
         <textarea id="notes" rows="4" placeholder="Enter payment details or additional notes"></textarea>
@@ -668,10 +677,13 @@
         row.querySelector('.item-amount').textContent = money(amount);
       });
 
-      const taxRate = Math.max(0, Number($('taxRate').value) || 0);
-      const discount = Math.max(0, Number($('discount').value) || 0);
+      const taxValue = Math.max(0, Number($('taxRate').value) || 0);
+const taxMode = $('taxMode').value;
+const discount = Math.max(0, Number($('discount').value) || 0);
 
-      const tax = subtotal * taxRate / 100;
+const tax = taxMode === 'percentage'
+  ? subtotal * taxValue / 100
+  : taxValue;
       const total = Math.max(0, subtotal + tax - discount);
 
       $('previewSubtotal').textContent = money(subtotal);
